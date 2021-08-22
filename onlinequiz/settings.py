@@ -133,6 +133,9 @@ STATIC_DIR,
 
 LOGIN_REDIRECT_URL='/afterlogin'
 
+import django_heroku
+django_heroku.settings(locals())
+
 #for contact us give your gmail id and password
  # host email password required
 # now sign in with your host gmail account in your browser
