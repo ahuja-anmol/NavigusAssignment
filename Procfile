@@ -1,1 +1,1 @@
-web: gunicorn NavigusAssignment.wsgi --log-file -
+web: gunicorn onlinequiz.wsgi
