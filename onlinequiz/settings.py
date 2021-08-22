@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-
+import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -134,7 +134,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
  #]
 
 LOGIN_REDIRECT_URL='/afterlogin'
-
+django_heroku.settings(locals())
 #for contact us give your gmail id and password
  # host email password required
 # now sign in with your host gmail account in your browser
